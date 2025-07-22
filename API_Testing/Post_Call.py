@@ -63,3 +63,5 @@ validate(instance=response_json,schema=response_schema)
 
 logging.info("All validations  passed successfully!")
 
+
+
