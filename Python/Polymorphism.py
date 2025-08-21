@@ -53,4 +53,30 @@ class child(parent):
 obj = child()
 obj.show()
 
+#real time example for method overriding
+class payment:
+
+    def process_payment(self,amount):
+        print(f"processing payment of amount of {amount}$")
+
+#child class overriding this method
+class creditcardpayment(payment):
+
+    def process_payment(self,amount):
+        print(f"processing credit card payment of {amount}$")
+
+class upipayment(payment):
+
+    def process_payment(self,amount):
+        print(f"processing payment of ${amount}")
+
+#create objects
+payment1 = creditcardpayment()
+payment2 = upipayment()
+
+#method overriding in action
+payment1.process_payment(1000)
+payment2.process_payment(2000)
+
 #what is duck typing ?
+# Duck typing is a concept in python where the type of an object is determined by its behaviour rather than its classmethod

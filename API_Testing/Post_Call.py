@@ -64,4 +64,27 @@ validate(instance=response_json,schema=response_schema)
 logging.info("All validations  passed successfully!")
 
 
+#
+#Post with Basic Auth
+# import requests
+# from requests.auth import HTTPBasicAuth
+#
+# url = "https://reqres.in/api/users"
+# payload = {"name": "John", "role": "admin"}
+#
+# response = requests.post(url,json=payload,auth=HTTPBasicAuth("username","password"))
+# print("status Code:",response.status_code)
+# print("response:",response.json())
 
+#post with bearer token
+# import requests
+#
+# url = "https://reqres.in/api/users"
+# payload = {"name": "John", "role": "admin"}
+#
+# headers = {
+#     "Authorization":"Bearer your_access_token",
+#     "content-type":"Application/json"
+# }
+#
+# response = requests.post(url,json=payload,headers=headers)

@@ -7,6 +7,7 @@ print(result1)
 s1 = "apple apple apple"
 print(s1.replace("apple","orange",1))
 
+
 #3.Replcae all spaces with hyphens
 s2 = "hello world python"
 print(s2.replace(" ","-"))
