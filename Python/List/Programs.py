@@ -112,7 +112,7 @@
 # duplicates = [item for item, freq in count.items() if freq>1]
 # print("duplicates:",duplicates)
 
-#reverse a list
+#reverse a list =done
 # my_list = [1, 2, 3, 4, 5]
 # reversed_list = my_list[::-1]
 # print(reversed_list)
@@ -125,9 +125,18 @@
 #
 # print(reversed_list)
 
-#merge 2 sorted list
-list1 = [1, 3, 5, 7]
-list2 = [2, 4, 6, 8]
+#merge 2 sorted list = done
+# list1 = [1, 3, 5, 7]
+# list2 = [2, 4, 6, 8]
+#
+# sorted_list = sorted(list1+list2)
+# print(sorted_list)
+#remove duplicates from list without using set = done
+# numbers = [1, 2, 2, 3, 4, 4, 5, 1]
+# new_list = []
+# for num in numbers:
+#     if num not in new_list:
+#         new_list.append(num)
+#
+# print(new_list)
 
-sorted_list = sorted(list1+list2)
-print(sorted_list)

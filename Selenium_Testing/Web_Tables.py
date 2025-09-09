@@ -24,10 +24,7 @@ for row in rows:
         continue
 
 driver.close()
-# second_row = rows[1]
-# columns = second_row.find_elements(By.TAG_NAME,"td")
-# print("Values in 2nd row:")
-# for col in columns:
-#     print(col.text)
-#
-# driver.quit()
+
+
+
+

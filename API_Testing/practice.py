@@ -1,6 +1,6 @@
-import requests
-import pytest
-import json
+# import requests
+# import pytest
+# import json
 
 # json_string = '{"name":"chandra","age":30,"city":"hyd"}'
 # python_dict = {"name":"chandra sekhar mandla","age":30,"city":"hyd"}
@@ -55,3 +55,33 @@ import json
 #
 # # How do you setup/teardown in pytest for api testing ?
 # use pytets.fixture to setup and teardown
+
+import requests
+
+# headers = {
+#     'Accept':'text/plain',
+#     'Content-Type':'application/json'
+# }
+# payload = {
+#     "id":100,
+#     "title":"senior QA Engineer",
+#     "status":"Active"
+# }
+
+# def test_get_call():
+#
+#     response = requests.get("https://fakerestapi.azurewebsites.net/api/v1/Activities",headers=headers)
+#     print(response.status_code)
+#     print(response.json())
+#     #assert response.status_code ==201
+
+import requests
+
+
+url = "https://reqres.in/api/users/2"
+
+response = requests.get(url)
+print(response)
+data = response.json()
+assert data["data"]["first_name"] == "Janet"
+

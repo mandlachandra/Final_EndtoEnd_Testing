@@ -98,6 +98,8 @@ def test_login():
 
 # #if you want to execute specific test
 # pytest tests/testlogin.py::TestLogin::test_valid_login
+
+
 #
 # pytest -m "smoke"
 # To run tests that are marked with specific label
@@ -111,9 +113,11 @@ def test_login():
 # 10.Pytest HTML reports
 # pytest --html = report/report.html --self-contained-html
 
+
 # 11.Allure reports integration
 # Use --alluredir=report to generate results, then
 # allure serve reports/
+
 
 # Hooks(Optional advanced feature)
 # Customize pytest behaviour using hooks like pytest_runtest_setup

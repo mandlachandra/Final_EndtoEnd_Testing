@@ -1,24 +1,24 @@
 #1.count frequency of each character in a string
-# s = "mandlachandrasekhar"
-# freq = {}
-#
-# for char in s:
-#     if char in freq:
-#         freq[char] +=1
-#
-#     else:
-#         freq[char] =1
-#
-# print(freq)
+s = "mandlachandrasekhar"
+freq = {}
 
-#merge 2 dictionary
-d1 = {"a":1,"b":3}
-d2 = {"b":34,"c":45}
+for char in s:
+    if char in freq:
+        freq[char] +=1
 
-# d1.update(d2)
-# print(d1)
-merged = d1 | d2
-print(merged)
+    else:
+        freq[char] =1
+
+print(freq)
+
+# #merge 2 dictionary
+# d1 = {"a":1,"b":3}
+# d2 = {"b":34,"c":45}
+#
+# # d1.update(d2)
+# # print(d1)
+# merged = d1 | d2
+# print(merged)
 #remove a key value pair
 # person = {"name":"sekhar","age":30}
 # removed_value = person.pop("age")
@@ -135,15 +135,15 @@ print(merged)
 # original = {'a':3,'c':8,'g':9}
 # inverted = {v: k for k, v in original.items()}
 # print(inverted)
-
-#how do you remove key from dictionary
-original = {'a':3,'c':8,'g':9}
-
-# value = original.pop('a')
+#
+# #how do you remove key from dictionary
+# original = {'a':3,'c':8,'g':9}
+#
+# # value = original.pop('a')
+# # print(original)
+#
+# del original['a']
 # print(original)
-
-del original['a']
-print(original)
 
 
 

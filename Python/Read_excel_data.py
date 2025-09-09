@@ -17,3 +17,4 @@ for row in sheet.iter_rows(min_row=2,max_row=sheet.max_row,min_col=1,max_col=2):
     uname = row[0].value
     pwd = row[1].value
     print(f"username:{uname},password:{pwd}")
+

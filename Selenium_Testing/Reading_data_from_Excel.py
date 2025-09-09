@@ -48,13 +48,14 @@ from selenium.webdriver.common.by import By
 import time
 
 #read data from excel
-test_data = get_excel_data("C://Users//DELL//Desktop//Credentials.xlsx", "Sheet1")
+test_data = get_excel_data("C://Users//DELL//OneDrive//Desktop//Credentials.xlsx", "Sheet1")
 
 @pytest.mark.parametrize("username,password",test_data)
 def test_login(username,password):
     driver=webdriver.Chrome()
+    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     driver.maximize_window()
-    time.sleep(4)
+    time.sleep(10)
 
     driver.find_element(By.NAME,"username").send_keys(username)
     driver.find_element(By.NAME,"password").send_keys(password)

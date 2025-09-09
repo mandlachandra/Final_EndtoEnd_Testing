@@ -12,6 +12,16 @@ time.sleep(4)
 
 rows = driver.find_elements(By.XPATH,'//div[@class="elementor-widget-container"]//tbody//tr')
 
+# for row in rows:
+#     try:
+#         email = row.find_element(By.XPATH,"./TD[2]").text
+#         print(email)
+#
+#     except:
+#         continue
+#
+# driver.close()
+
 for row in rows:
     try:
         email = row.find_element(By.XPATH,"./TD[2]").text
@@ -19,6 +29,4 @@ for row in rows:
 
     except:
         continue
-
-driver.close()
 
