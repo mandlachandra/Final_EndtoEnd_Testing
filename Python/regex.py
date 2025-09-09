@@ -104,3 +104,7 @@ print(result)
 #subn
 result = re.subn(r"\d","#","user1234")
 print(result)
+
+#subn
+result = re.subn(r"\d","*","username1234")
+print(result)
