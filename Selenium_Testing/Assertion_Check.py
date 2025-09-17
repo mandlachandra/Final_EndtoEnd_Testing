@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 plp_url = driver.current_url
 driver.find_element(By.XPATH,"//div[@class='product-card'][1]").click()
 
-WebDriverWait(driver,10).until(EC.url_changes(plp_url))
+WebDriverWait(driver,10).until(EC.url_changes())
 
 assert "product" in driver.current_url.lower()
 

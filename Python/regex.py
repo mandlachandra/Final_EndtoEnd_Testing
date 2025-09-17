@@ -105,6 +105,6 @@ print(result)
 result = re.subn(r"\d","#","user1234")
 print(result)
 
-#subn
-result = re.subn(r"\d","*","username1234")
-print(result)
+#“Implemented Selenium Grid for parallel and cross-browser testing,
+# reducing execution time and ensuring application compatibility across multiple environments.”
+

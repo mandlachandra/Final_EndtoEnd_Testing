@@ -29,13 +29,13 @@
 #         unique_fruits.append(fruit)
 # print(unique_fruits)
 
-#How to reverse a list in python
+#How to reverse a list in python #done
 #1.using reverse
 # numbers = [1,2,3,4,6]
 # numbers.reverse()
 # print(numbers)
 
-#2.using [::-1]
+#2.using [::-1] = #done
 # numbers1 = [1,2,3,4,6,9]
 # reversed_list = numbers1[::-1]
 # print(reversed_list)

@@ -177,7 +177,7 @@ def divide(a, b):
         result = a / b
         print("result", result)
     except ZeroDivisionError:
-        print("division by zero is not allowd")
+        print("division by zero is not allowed")
 
     finally:
         print("execution is done")
@@ -202,6 +202,28 @@ divide(10, 0)
 #         driver = item.funcargs['driver']
 #         driver.save_screenshot(f"screenshot/{item.name}.png")
 #         print(f"\n screenshot for failed test :{item.name}.png")
+
+#Write a function to get the least 2 numbers from the list.
+def get_least_two_numbers(lst):
+    numbers = []
+    for item in lst:
+        # Convert only numeric strings or integers
+        if isinstance(item, int):
+            numbers.append(item)
+        elif isinstance(item, str) and item.isdigit():
+            numbers.append(int(item))
+
+    # Sort numbers
+    numbers.sort()
+
+    # Return least 2 numbers
+    return numbers[:2]
+
+
+# Example
+lis = ["1", 332, "apple", 23, 44, 2, 1, "0"]
+print(get_least_two_numbers(lis))
+
 
 
 

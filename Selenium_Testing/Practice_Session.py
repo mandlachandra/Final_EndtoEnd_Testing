@@ -13,3 +13,24 @@
 #
 # finally:
 #     driver.quit()
+
+import pytest
+
+# @pytest.mark.parametrize("a,b,result",[(2,3,5),(5,5,10),(10,5,15)])
+# def test_add(a,b,result):
+#     assert a+b == result
+#
+@pytest.mark.parametrize("a,b,result",[(2,3,5),(5,5,10),(10,5,15)])
+def test_add(a,b,result):
+    assert a + b ==result
+
+@pytest.mark.smoke
+def test_login():
+    assert True
+
+#Running with markers
+# pytest -m "smoke"
+
+def test_zero_division():
+    with pytest.raises(ZeroDivisionError):
+        1/0
